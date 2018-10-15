@@ -1,0 +1,41 @@
+n4d-mysql (0.6.2) xenial; urgency=medium
+
+  * Change field "version" in Pmb tables according to the version of the backup
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 20 Jun 2017 16:51:08 +0200
+
+n4d-mysql (0.6.1) xenial; urgency=medium
+
+  * Fix pwd for pmb and moodle
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 20 Jun 2017 12:44:18 +0200
+
+n4d-mysql (0.6) xenial; urgency=medium
+
+  * Fix for restore backups from Trusty
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Fri, 17 Jun 2016 13:56:07 +0200
+
+n4d-mysql (0.5) xenial; urgency=medium
+
+  * Imported trusty code
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 12 Feb 2016 11:18:36 +0100
+
+n4d-mysql (0.3) trusty; urgency=high
+
+  * Making sure my.cnf file is present when creating backup
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 17 Jul 2015 10:05:52 +0200
+
+n4d-mysql (0.2) trusty; urgency=medium
+
+  * First trusty release
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 15 Apr 2015 09:32:04 +0200
+
+n4d-mysql (0.1) precise; urgency=high
+
+  * Initial release.
+
+ -- Hector Garcia Huerta <lliurex_devel1@edu.gva.es>  Mon, 15 Sep 2014 16:58:25 +0200

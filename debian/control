@@ -1,0 +1,14 @@
+Source: n4d-mysql
+Section: admin
+Priority: optional
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Uploaders: Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>, Raul Rodrigo Segura <lliurex_devel3@edu.gva.es>, David Montalva Furio <montalva_dav@gva.es>, Alfons Lloret Sananton <lliurex_devel5@edu.gva.es>, Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>, Hector Garcia Huerta <lliurex_devel1@edu.gva.es>, Jose Carlos Garcia Monsalvez <garcia_josmon@gva.es>, Jaime Munyoz Fayos <munyoz_jaifay@gva.es>, Francisco Antonino Daviu <antonino_fra@gva.es>, Miguel Garcia Gomez <garcia_miggom@gva.es>
+Build-Depends: debhelper (>= 8.0.0), n4d-dev
+Standards-Version: 3.8.4
+
+Package: n4d-mysql
+Depends:  ${shlibs:Depends}, ${misc:Depends}, n4d
+Architecture: all
+Description: n4d mysql plugin
+ N4D MySQL operations
+
