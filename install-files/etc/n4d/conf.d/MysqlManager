@@ -3,5 +3,5 @@ type=python
 path=MysqlManager.py
 class=MysqlManager
 [METHODS]
-backup=adm,admins
-restore=adm,admins
+backup=sudo,admins
+restore=sudo,admins
