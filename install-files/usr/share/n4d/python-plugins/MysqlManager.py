@@ -122,15 +122,18 @@ class MysqlManager:
 			sql='"update pmb.parametres set valeur_param=\'vLlxNemo\' where type_param=\'pmb\' and sstype_param=\'bdd_version\'"'
 			cmd=mysql_command + sql
 			os.system(cmd)
-		elif 	version=="v5.10":
+		elif version=="v5.10":
 			sql='"update pmb.parametres set valeur_param=\'vLlxPandora\' where type_param=\'pmb\' and sstype_param=\'bdd_version\'"'
 			cmd=mysql_command + sql
 			os.system(cmd)
-	
 		elif version=="v5.14":
 			sql='"update pmb.parametres set valeur_param=\'vLlxTrusty\' where type_param=\'pmb\' and sstype_param=\'bdd_version\'"'
 			cmd=mysql_command + sql
 			os.system(cmd)
+		elif version=="v5.19":
+			sql='"update pmb.parametres set valeur_param=\'vLlxXenial\' where type_param=\'pmb\' and sstype_param=\'bdd_version\'"'
+			cmd=mysql_command + sql
+			os.system(cmd)	
 
 	#def change_pmb_version
 	
