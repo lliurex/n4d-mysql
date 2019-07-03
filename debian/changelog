@@ -1,3 +1,9 @@
+n4d-mysql (0.6.14) bionic; urgency=medium
+
+  * Updated pmb db version when xenial backup is restored
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 03 Jul 2019 09:34:45 +0200
+
 n4d-mysql (0.6.13) bionic; urgency=medium
 
   * Adding sudo group
