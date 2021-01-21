@@ -1,0 +1,23 @@
+{
+	"SETUP": {
+		"type":"python",
+		"path":"MysqlManager.py",
+		"class":"MysqlManager"
+	},
+	"METHODS": {
+		"backup":
+		{
+			"allowed_groups":[
+				"sudo",
+				"admins"
+			]
+		},
+		"restore":
+		{
+			"allowed_groups":[
+				"sudo",
+				"admins"
+			]
+		}
+	}
+}

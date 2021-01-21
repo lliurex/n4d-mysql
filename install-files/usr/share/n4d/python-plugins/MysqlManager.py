@@ -1,9 +1,9 @@
-
 import tempfile
 import shutil
 import os
 import subprocess
 import time
+import n4d.responses
 
 class MysqlManager:
 	
@@ -45,12 +45,12 @@ class MysqlManager:
 				
 				os.system("chmod 600 %s"%file_path)
 				
-				return [True,file_path]
+				return n4d.responses.build_successful_call_response(file_path)
 			
 		except Exception as e:
-			return [False,str(e)]
+			return n4d.responses.build_failed_call_response(e)
 			
-		return [False,"Mysqldump failed"]
+		return n4d.responses.build_failed_call_response("Mysqldunmp failed")
 		
 	#def test
 	
@@ -88,7 +88,7 @@ class MysqlManager:
 				version=objects["ServerBackupManager"].restoring_version
 				majorBackupVersion=int(version[0:version.find('.')])
 				if majorBackupVersion<=15:
-					print "Upgrading from an ancient version..."
+					print ("Upgrading from an ancient version...")
 					cmd="mysql_upgrade -p$(mysql_root_passwd -g)"
 					os.system(cmd)
 
@@ -101,11 +101,11 @@ class MysqlManager:
 				#Fix for pmb imports
 				self.change_pmb_version()
 
-				return [True,""]
+				return n4d.responses.build_successful_call_response("")
 				
 		except Exception as e:
-			print e
-			return [False,file_path + ": " + str(e)]
+			print (e)
+			return n4d.responses.build_failed_call_response(file_path + ": " + str(e))
 		
 	#def test
 
