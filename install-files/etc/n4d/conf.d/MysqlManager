@@ -1,7 +1,0 @@
-[SETUP]
-type=python
-path=MysqlManager.py
-class=MysqlManager
-[METHODS]
-backup=sudo,admins
-restore=sudo,admins
