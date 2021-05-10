@@ -1,3 +1,9 @@
+n4d-mysql (0.6.14.2) focal; urgency=medium
+
+  * Fixed backup and restore functions
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 10 May 2021 13:50:07 +0200
+
 n4d-mysql (0.6.14.1) focal; urgency=medium
 
   * First focal release
