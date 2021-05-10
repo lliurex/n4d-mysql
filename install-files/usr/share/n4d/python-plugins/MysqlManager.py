@@ -4,6 +4,8 @@ import os
 import subprocess
 import time
 import n4d.responses
+import n4d.utils
+import tarfile
 
 class MysqlManager:
 	
@@ -16,7 +18,7 @@ class MysqlManager:
 	
 	def get_time(self):
 		
-		return get_backup_name("MysqlManager")
+		return n4d.utils.get_backup_name("MysqlManager")
 		
 	#def get_time
 	
@@ -63,7 +65,7 @@ class MysqlManager:
 					break
 
 		if file_path==None:
-			return [False,"No backup file found"]
+			return n4d.responses.build_failed_call_response("No backup file found")
 			
 		try:
 
@@ -132,6 +134,10 @@ class MysqlManager:
 			os.system(cmd)
 		elif version=="v5.19":
 			sql='"update pmb.parametres set valeur_param=\'vLlxXenial\' where type_param=\'pmb\' and sstype_param=\'bdd_version\'"'
+			cmd=mysql_command + sql
+			os.system(cmd)	
+		elif version=="v5.28":
+			sql='"update pmb.parametres set valeur_param=\'vLlxXenialPlus\' where type_param=\'pmb\' and sstype_param=\'bdd_version\'"'
 			cmd=mysql_command + sql
 			os.system(cmd)	
 
