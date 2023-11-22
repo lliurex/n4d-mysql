@@ -1,0 +1,14 @@
+Source: n4d-mysql
+Section: admin
+Priority: optional
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Uploaders: Equipo LliureX <lliurex@gva.es>
+Build-Depends: debhelper (>= 10), n4d-dev
+Standards-Version: 4.1.2
+
+Package: n4d-mysql
+Depends:  ${shlibs:Depends}, ${misc:Depends}, n4d
+Architecture: all
+Description: n4d mysql plugin
+ N4D MySQL operations
+
