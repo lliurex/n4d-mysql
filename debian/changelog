@@ -1,3 +1,9 @@
+n4d-mysql (0.16.14.2) jammy; urgency=medium
+
+  * Initial release for Jammy
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 22 Nov 2023 17:11:25 +0100
+
 n4d-mysql (0.6.14.2) focal; urgency=medium
 
   * Fixed backup and restore functions
